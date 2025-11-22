@@ -240,7 +240,7 @@
     const CAT_SIZE = 50;
     const BALL_SIZE = 20;
     const MAX_BOUNCE_HEIGHT_RATIO = 0.6; 
-    const BASE_GRAVITY = 0.5;
+    const BASE_GRAVITY = 0.4; // DECREASED: Ball now falls and bounces 20% slower
     const GRAVITY_SCALE_PER_SCORE = 0.01;
     const BEST_SCORE_STORAGE_KEY = 'catHeaderBestScore';
 
@@ -472,7 +472,7 @@
         // 5. Check for Collision with Ground
         if (ball.y + ball.radius > groundY) {
             
-            // --- NEW LIVES LOGIC (Fixed 5 lives) ---
+            // --- LIVES LOGIC ---
             lives--;
             livesValue.textContent = lives;
             
@@ -480,7 +480,7 @@
                 endGame();
                 return;
             }
-            // --- END NEW LIVES LOGIC ---
+            // --- END LIVES LOGIC ---
             
             // Perform the bounce: set velocity to calculated magnitude for fixed height
             ball.velY = requiredUpwardVel;
