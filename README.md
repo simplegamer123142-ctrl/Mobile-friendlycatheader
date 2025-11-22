@@ -240,8 +240,8 @@
     const CAT_SIZE = 50;
     const BALL_SIZE = 20;
     const MAX_BOUNCE_HEIGHT_RATIO = 0.6; 
-    const BASE_GRAVITY = 0.4; // DECREASED: Ball now falls and bounces 20% slower
-    const GRAVITY_SCALE_PER_SCORE = 0.01;
+    const BASE_GRAVITY = 0.3; // FURTHER DECREASED: Ball now falls significantly slower
+    const GRAVITY_SCALE_PER_SCORE = 0.008; // Decreased slightly to slow the difficulty ramp
     const BEST_SCORE_STORAGE_KEY = 'catHeaderBestScore';
 
     // Ball object
