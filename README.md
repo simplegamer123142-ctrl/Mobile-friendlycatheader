@@ -48,7 +48,7 @@
             touch-action: none; /* Prevent browser scrolling on touch */
             border-radius: 6px;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 1200%; /* Make canvas fluid within container */
+            width: 100%; /* Make canvas fluid within container */
             max-height: 70vh; /* Prevent it from taking too much vertical space */
         }
 
@@ -240,8 +240,8 @@
     const CAT_SIZE = 50;
     const BALL_SIZE = 20;
     const MAX_BOUNCE_HEIGHT_RATIO = 0.6; 
-    const BASE_GRAVITY = 0.3; // FURTHER DECREASED: Ball now falls significantly slower
-    const GRAVITY_SCALE_PER_SCORE = 0.008; // Decreased slightly to slow the difficulty ramp
+    const BASE_GRAVITY = 0.23; // ADJUSTED: Significantly slower ball speed (approx 75% of previous)
+    const GRAVITY_SCALE_PER_SCORE = 0.005; // ADJUSTED: Slower difficulty ramp
     const BEST_SCORE_STORAGE_KEY = 'catHeaderBestScore';
 
     // Ball object
