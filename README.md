@@ -48,7 +48,7 @@
             touch-action: none; /* Prevent browser scrolling on touch */
             border-radius: 6px;
             box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-            width: 100%; /* Make canvas fluid within container */
+            width: 1200%; /* Make canvas fluid within container */
             max-height: 70vh; /* Prevent it from taking too much vertical space */
         }
 
